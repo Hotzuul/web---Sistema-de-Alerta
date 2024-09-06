@@ -1,0 +1,69 @@
+
+
+.projects-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas de igual ancho */
+    gap: 20px; /* Espacio entre los elementos */
+}
+
+.project-card {
+    display: flex;
+    align-items: center;
+    width: 100%; /* Ajusta al 100% del contenedor */
+    background-color: #e0e0e0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.status-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 80px;
+    background-color: #ff0000;
+    color: #ffffff;
+    font-size: 36px;
+}
+
+.project-info {
+    flex: auto;
+    padding: 7px;
+    background-color: #f8f8f8;
+}
+
+.project-info h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.project-info .failure {
+    color: #ff0000;
+    font-weight: bold;
+}
+
+.project-info .failed-condition {
+    color: #ff0000;
+}
+
+.error-info {
+    padding: 10px;
+    white-space: nowrap;
+}
+
+.review-button {
+    background-color: #ff8c00;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.review-button:hover {
+    background-color: #e57c00;
+}

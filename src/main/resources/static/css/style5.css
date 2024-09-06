@@ -1,0 +1,219 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 280px;
+}
+
+.header {
+    display: ruby;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-left .icon {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: white;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.header-left .info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px; /* Ajusta este valor según sea necesario */
+}
+
+.header-left .info h2 {
+    margin: 0;
+}
+
+.header-left .info p {
+    margin: 0;
+    font-size: 14px;
+    color: gray;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.header-right .chart {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-right .chart .circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #007bff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-right .chart .circle .inner-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #f08080;
+}
+
+.header-right .info {
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.measures {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.measure {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.measure.active {
+    background-color: #f0f0f0;
+}
+
+.measure .label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.measure .value {
+    margin-left: 10px;
+}
+
+.measure .value.failed {
+    color: red;
+}
+
+.measure .value.passed {
+    color: green;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.details .section {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.details .section .title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.details .section .content {
+    display: flex;
+    align-items: center;
+}
+
+.details .section .content .icon {
+    width: 20px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.details .section .content .info {
+    font-size: 14px;
+}
+
+.details .section .content .info.failed {
+    color: red;
+}
+
+.details .section .content .info.passed {
+    color: green;
+}
+
+.details .section .range {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.details .section .range .label {
+    margin-left: 5px;
+}
+
+.details .section .range .icon {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #ffcc99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.details .section .range .icon.passed {
+    background-color: #99cc99;
+}
+
+.details .section .range .icon.failed {
+    background-color: #ff9999;
+}
+
+.duplicated {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.duplicated .title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.duplicated .content {
+    font-size: 14px;
+}
